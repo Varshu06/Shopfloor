@@ -1,0 +1,489 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Barlow:Medium";
+  src: url("https://static.figma.com/font/Barlow-Medium_2") format("woff2");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Barlow:SemiBold";
+  src: url("https://static.figma.com/font/Barlow-SemiBold_2") format("woff2");
+  font-style: normal;
+  font-weight: 600;
+}
+
+:root {
+  background: #141339;
+  color: #fff;
+  font-synthesis: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+body {
+  background: #141339;
+}
+
+.viewport {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background: #141339;
+}
+
+.dashboard {
+  container-type: inline-size;
+  position: relative;
+  width: min(100vw, 177.7777778vh);
+  height: min(100vh, 56.25vw);
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  background: #141339;
+  color: #fff;
+  font-family: "Barlow:SemiBold", "Arial Narrow", sans-serif;
+  font-feature-settings:
+    "lnum" 1,
+    "tnum" 1;
+}
+
+.dashboard-header {
+  position: absolute;
+  inset: 0 0 auto;
+  height: 4.166667cqw;
+  overflow: hidden;
+}
+
+.dashboard-header__logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4.166667cqw;
+  height: 4.166667cqw;
+}
+
+.dashboard-header h1 {
+  position: absolute;
+  top: 50%;
+  left: 6.666667cqw;
+  margin: 0;
+  transform: translateY(-50%);
+  font-family: "Barlow:SemiBold", "Arial Narrow", sans-serif;
+  font-size: 2.5cqw;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.05cqw;
+  white-space: nowrap;
+}
+
+.dashboard-header__time {
+  position: absolute;
+  top: 50%;
+  right: 1.25cqw;
+  display: flex;
+  align-items: center;
+  gap: 2.135417cqw;
+  transform: translateY(-50%);
+  font-size: 2.5cqw;
+  line-height: normal;
+  letter-spacing: 0.05cqw;
+  white-space: nowrap;
+}
+
+.dashboard-header__time span {
+  font-family: "Barlow:Medium", "Arial Narrow", sans-serif;
+  font-weight: 500;
+}
+
+.dashboard-header__time strong {
+  font-family: "Barlow:SemiBold", "Arial Narrow", sans-serif;
+  font-weight: 600;
+}
+
+.dashboard-areas {
+  position: absolute;
+  top: 4.529948cqw;
+  left: 1.302083cqw;
+  width: 97.395833cqw;
+  height: 47.190078cqw;
+}
+
+.area {
+  position: absolute;
+  top: 0;
+  display: flex;
+  gap: 1.041667cqw;
+}
+
+.area--1 {
+  left: 0;
+}
+
+.area--2 {
+  left: 32.8125cqw;
+}
+
+.area--3 {
+  left: 65.625cqw;
+}
+
+.area--4 {
+  left: 83.072917cqw;
+}
+
+.area-column {
+  width: 12.890625cqw;
+  flex: 0 0 12.890625cqw;
+}
+
+.area-column__title {
+  display: flex;
+  height: 1.655833cqw;
+  align-items: center;
+  padding-left: 0.33125cqw;
+  font-size: 1.159115cqw;
+  font-weight: 600;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.area-column__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.165573cqw;
+  margin-top: 0.165573cqw;
+}
+
+.work-center {
+  position: relative;
+  width: 12.890625cqw;
+  height: 1.655833cqw;
+  flex: 0 0 1.655833cqw;
+  overflow: hidden;
+  border-radius: 0.208333cqw;
+  background: #004d4d;
+}
+
+.work-center__label {
+  position: absolute;
+  top: 50%;
+  left: 0.165625cqw;
+  width: 5.878203cqw;
+  height: 1.324661cqw;
+  transform: translateY(-50%);
+  overflow: hidden;
+  border-radius: 0.104167cqw;
+  background: #0ff;
+  color: #000;
+}
+
+.work-center__status {
+  position: absolute;
+  top: 50%;
+  left: 0.33125cqw;
+  display: grid;
+  width: 0.827917cqw;
+  height: 0.827917cqw;
+  transform: translateY(-50%);
+  place-items: center;
+}
+
+.work-center__status img {
+  display: block;
+  width: 0.827917cqw;
+  height: 0.827917cqw;
+}
+
+.work-center__name {
+  position: absolute;
+  top: 50%;
+  left: 1.481146cqw;
+  width: 4.388cqw;
+  transform: translateY(-50%);
+  font-size: 1.159115cqw;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.call-icons {
+  position: absolute;
+  top: 50%;
+  right: 0.33125cqw;
+  display: flex;
+  align-items: center;
+  gap: 0.331172cqw;
+  transform: translateY(-50%);
+}
+
+.call-icons > img,
+.call-icons > .checklist-icon {
+  display: block;
+  width: 0.99349cqw;
+  height: 0.99349cqw;
+  flex: 0 0 0.99349cqw;
+}
+
+.call-icons > img:nth-of-type(2) {
+  opacity: 0.2;
+}
+
+.checklist-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.062083cqw;
+  opacity: 0.2;
+}
+
+.checklist-icon i {
+  position: relative;
+  display: block;
+  height: 0.248385cqw;
+  border-left: 0.062083cqw solid #000;
+}
+
+.checklist-icon i::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0.248385cqw;
+  height: 0.248385cqw;
+  border: 0.062083cqw solid #000;
+  content: "";
+}
+
+.checklist-icon i:first-child::before {
+  background: #000;
+}
+
+.checklist-icon i::after {
+  position: absolute;
+  top: 0.062083cqw;
+  left: 0.310417cqw;
+  width: 0.683021cqw;
+  height: 0.124219cqw;
+  background: #000;
+  content: "";
+}
+
+.work-center--disturbance {
+  background: #800000;
+}
+
+.work-center--disturbance .work-center__label {
+  background: red;
+  color: #fff;
+}
+
+.work-center--offline {
+  background: #333;
+}
+
+.work-center--offline .work-center__label {
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.208333cqw;
+  background: transparent;
+  color: #c0c0c0;
+}
+
+.work-center--offline .work-center__name {
+  left: 1.481146cqw;
+  text-align: center;
+}
+
+.work-center--setup {
+  background: #333;
+}
+
+.work-center--setup .work-center__label {
+  background: #c0c0c0;
+}
+
+.work-center--stillstand {
+  background: #808000;
+}
+
+.work-center--stillstand .work-center__label {
+  background: #ff0;
+}
+
+.work-center--linked {
+  background: #808060;
+}
+
+.work-center--linked .work-center__label {
+  background: #ffffc0;
+}
+
+.offline-slash {
+  display: block;
+  width: 0.096875cqw;
+  height: 0.585938cqw;
+  transform: rotate(-45deg);
+  background: #c0c0c0;
+}
+
+.stillstand-square {
+  display: block;
+  width: 0.620833cqw;
+  height: 0.620833cqw;
+  background: #000;
+}
+
+.legend {
+  position: absolute;
+  top: 52.083333cqw;
+  left: 0;
+  display: flex;
+  width: 100cqw;
+  height: 4.166667cqw;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+
+.legend__items {
+  display: flex;
+  align-items: center;
+  gap: 1.145833cqw 1.666667cqw;
+  white-space: nowrap;
+}
+
+.legend__item {
+  display: flex;
+  align-items: center;
+  gap: 0.3125cqw;
+  font-size: 0.859375cqw;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.legend__item--separated {
+  position: relative;
+}
+
+.legend__item--separated::before {
+  position: absolute;
+  top: 50%;
+  left: -0.755208cqw;
+  width: 0.026042cqw;
+  height: 1.25cqw;
+  transform: translateY(-50%);
+  background: #fff;
+  content: "";
+}
+
+.legend-state,
+.legend-call-icon {
+  position: relative;
+  display: grid;
+  width: 0.916666cqw;
+  height: 0.916666cqw;
+  flex: 0 0 0.916666cqw;
+  overflow: hidden;
+  border-radius: 0.104167cqw;
+  place-items: center;
+}
+
+.legend-state img {
+  width: 0.572916cqw;
+  height: 0.572916cqw;
+}
+
+.legend-state--productive {
+  background: #0ff;
+}
+
+.legend-state--disturbance {
+  background: red;
+}
+
+.legend-state--stillstand {
+  background: #ff0;
+}
+
+.legend-state--linked {
+  background: #ffffc0;
+}
+
+.legend-state--setup,
+.legend-state--strip-down {
+  background: #c0c0c0;
+}
+
+.legend-state--offline {
+  background: #404040;
+}
+
+.legend-state .stillstand-square {
+  width: 0.429688cqw;
+  height: 0.429688cqw;
+}
+
+.legend-state .offline-slash {
+  width: 0.107422cqw;
+  height: 0.644532cqw;
+}
+
+.legend-call-icon {
+  border-radius: 0;
+}
+
+.legend-call-icon.checklist-icon {
+  width: 0.916666cqw;
+  height: 0.916666cqw;
+  opacity: 1;
+}
+
+.checklist-icon--light {
+  width: 0.916666cqw;
+  gap: 0.068291cqw;
+  opacity: 1;
+}
+
+.checklist-icon--light i {
+  height: 0.229166cqw;
+  border-left-width: 0.057291cqw;
+  border-left-color: #fff;
+}
+
+.checklist-icon--light i::before {
+  width: 0.229166cqw;
+  height: 0.229166cqw;
+  border-width: 0.057291cqw;
+  border-color: #fff;
+}
+
+.checklist-icon--light i:first-child::before,
+.checklist-icon--light i::after {
+  background: #fff;
+}
+
+.checklist-icon--light i::after {
+  top: 0.057291cqw;
+  left: 0.286459cqw;
+  width: 0.630209cqw;
+  height: 0.114584cqw;
+}

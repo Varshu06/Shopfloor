@@ -1,0 +1,10 @@
+{
+  "description": "This dashboard provides a comprehensive view of shop floor operations, displaying work centers and area data for efficient monitoring and management.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

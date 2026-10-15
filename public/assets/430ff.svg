@@ -1,0 +1,12 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="icon/PRF" clip-path="url(#clip0_0_11602)">
+<path id="Ellipse 11" d="M26 14C26 20.6274 20.6274 26 14 26C7.37258 26 2 20.6274 2 14C2 7.37258 7.37258 2 14 2C20.6274 2 26 7.37258 26 14Z" stroke-width="4" stroke="white"/>
+<rect id="Rectangle 860" x="20.4551" y="23.2832" width="4" height="11.7019" transform="rotate(-45 20.4551 23.2832)" fill="white"/>
+<path id="Vector 15" d="M22 14H18L16 9L14 14L12 19L10 14H6" stroke-width="2" stroke="white"/>
+</g>
+<defs>
+<clipPath id="clip0_0_11602">
+<rect width="32" height="32" fill="white"/>
+</clipPath>
+</defs>
+</svg>
